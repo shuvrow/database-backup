@@ -1,4 +1,4 @@
 <?php
 
 
-Route::get('backup','Hoque\Backup\DbBackupController@index');
+Route::get('backup','Rashed\Backup\DbBackupController@index');
