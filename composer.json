@@ -1,0 +1,26 @@
+{
+    "name": "rashed/backup",
+    "description": "database automatic backup on user's disk",
+    "keywords": ["database", "backup", "laravel", "db auto backup", "php"],
+    "authors": [
+        {
+            "name": "Rashedul Hoque Bhuiyan",
+            "email": "shuvrow@gmail.com"
+        }
+    ],
+    "type": "library",
+    "license": "Creative Commons",
+
+    "require": {
+        "php": ">=5.5.9",
+        "nesbot/carbon": "~1.21"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rashed\\Backup\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+
