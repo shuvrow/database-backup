@@ -1,5 +1,5 @@
 {
-    "name": "rashed/backup",
+    "name": "rashed/database-backup",
     "description": "database automatic backup on user's disk",
     "keywords": ["database", "backup", "laravel", "db auto backup", "php"],
     "authors": [
