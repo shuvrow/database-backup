@@ -6,7 +6,7 @@ Database Auto Backup For Laravel 5.2 users
 Db-backup is a laravel package. You can install it via composer.In your project directory run following command: 
 
 
-```composer require 'rashed/backup':'dev-master'```
+```composer require 'rashed/database-backup':'dev-master'```
 
 ##Configuration<i class="icon-cog"></i>
 
