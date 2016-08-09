@@ -44,7 +44,7 @@ class DbBackupController extends Controller{
     {
         $downloadableFilePath= $fileFullPath;
         header('Content-Description: File Transfer');
-        header('Content-Type: application/force-download');
+        header('Content-Type: application/octet-stream');
         header("Content-Disposition: attachment; filename=\"" . basename($downloadableFilePath) . "\";");
         header('Content-Transfer-Encoding: binary');
         header('Expires: 0');
