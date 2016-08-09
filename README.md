@@ -17,7 +17,7 @@ Set directory for database backup on web server.Add **DB_BACKUP** on  **.env** f
 
 When download is completed, add following line on **app.php** file in **providers** section
 
-    \Rashed\Backup\DbBackupServiceProvider::class
+    \Rashed\Backup\DbBackupServiceProvider::class,
 
 ###publish<i class="icon-upload">
 
@@ -27,7 +27,8 @@ Now run following command from terminal
    
 
     php artisan config:clear 
-    php artisan vendor:publish
+    composer dump-autoload -o
+    
 
 This will publish all necessary file for this package.
 
@@ -60,9 +61,13 @@ To use this option you have to add a cron entry on your server.
 
     * * * * * php /path/to/artisan schedule:run >> /dev/null 2>&1
 	
-After adding this, add following line in **$commands** variable on **app/Console/kernel.php** file:
+After adding this, add following line on **app/Console/kernel.php** file:
 
-    Commands\Backup::class,
+    use Rashed\Backup\Backup;
+    
+   and add following line in **$commands** variable
+    
+    Backup::class,
 
 And on `schedule()` function add scheduler as your requirements.
 
