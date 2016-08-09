@@ -1,6 +1,6 @@
 <?php
 
-namespace Rashed\Backup;
+namespace Rashed\Backup\Commands;
 
 use Rashed\Backup\DbBackupController;
 use Illuminate\Console\Command;

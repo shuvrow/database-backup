@@ -63,7 +63,7 @@ To use this option you have to add a cron entry on your server.
 	
 After adding this, add following line on **app/Console/kernel.php** file:
 
-    use Rashed\Backup\Backup;
+    use Rashed\Backup\Commands\Backup;
     
    and add following line in **$commands** variable
     
